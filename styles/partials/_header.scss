@@ -2,6 +2,8 @@
     height: 100vh;
     background-image: url("../images/image-1.jpeg");
     background-size: cover;
+    background-position: bottom right 25%;
+    padding: 0 20px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -15,11 +17,38 @@
         justify-content: space-between;
         padding-top: 20px;
     }
+    &__h1 {
+        flex-shrink: 5;
+    }
     &__ul {
         align-self: center;
+        flex-shrink: 1;
     }
     &__li {
         margin-left: 40px;
     }
-    &__h4 {}
+}
+
+@media (max-width: 762px) {
+    .headerNav {
+        &__wrapper {
+        flex-direction: column;
+        text-align: left;
+        margin: 0 50px;
+        }
+        &__ul {
+            align-self: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+        &__li {
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+    .header {
+        &__wrapper {
+            padding: 0 50px;
+        }
+    }
 }

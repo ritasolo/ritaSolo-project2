@@ -1,5 +1,6 @@
 .footer {
     background-color: $darkgrey;
+    padding: 0 20px;
     padding-top: 50px;
     &__h4 {
         margin-bottom: 30px;
@@ -58,12 +59,15 @@
             &__third {
                 width: 33%;
             }
+            &__third:nth-of-type(1) {
+                flex: 0 5 auto;
+            }
             &__third:nth-of-type(2) {
-                flex: 2 0 420px;
+                flex: 10 2 420px;
                 padding: 0 60px;
             }
             &__third:nth-of-type(3) {
-                flex: 1 0 260px;
+                flex: 1 1 260px;
             }
             &__gallery {
                 display: flex;
@@ -78,4 +82,32 @@
         
     }
     
+}
+
+@media (max-width: 860px) {
+    .footer {
+        &__h4 {
+            margin-top: 20px;
+        }
+        &__nav {
+            display: flex;
+            justify-content: center;
+        }
+        .footer__wrapper {
+            display: block;
+            .footerSections {
+            display: block;
+                &__third {
+                    width: 100%;
+                    text-align: center;
+                    margin: 40px 0;
+                    border-top: 1px solid grey;
+                }
+                &__gallery {
+                    padding: 0 100px;
+                }
+            }
+        }
+    }
+
 }

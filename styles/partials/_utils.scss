@@ -43,12 +43,13 @@ img {
 }
 
 .wrapper {
-    width: 60%;
+	max-width: 862px;    
     margin: 0 auto;
 }
 
 .smallWrapper {
-    width: 40%;
+    // width: 40%;
+    max-width: 538px;
     margin: 0 auto;
 }
 

@@ -26,6 +26,7 @@
 
 .blog {
     text-align: center;
+    padding: 0 20px;
     &__h3 {
         margin: 70px 0;
     }
@@ -52,6 +53,31 @@
         &__chevron {
             font-size: 2rem;
             margin: 0 5px;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .blogPosts {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 716px) {
+    .blogPosts {
+        padding: 0 50px;
+        &__ul {
+            flex-wrap: wrap;
+        }
+        &__li:first-of-type{
+            width: 48%;
+        }
+        &__li:nth-of-type(2) {
+            width: 48%;
+        }
+        &__li:last-of-type {
+            width: 100%;
+            margin-top: 40px;
         }
     }
 }

@@ -15,16 +15,17 @@
                 max-height: 255px;
             }
             &__content {
-                height: 255px;
-                width: 100%;
                 background:rgba(42,42,42,0.9);
                 position: absolute;
                 top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
                 z-index: 10;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 0 50px;
+                padding: 0 40px;
             }
             .container {
                 width: 80%;
@@ -53,5 +54,51 @@
         padding: 10px 0;
         margin-top: 50px;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1089px) {
+   .events {
+        &__sampleEvent {
+            &__ul {
+                flex-direction: column;
+                padding: 0;
+                align-items: center;
+            }
+            &__li {
+                margin: 10px 0;
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 764px) {
+    .events {
+        &__sampleEvent {
+            &__ul {
+                flex-direction: column;
+                padding: 0;
+                align-items: center;
+            }
+            &__li {
+                margin: 10px 0;
+                width: 60%;
+            }
+            p {
+                display: none;
+            }
+            .container {
+                border: 0;
+            }
+        }
+    }
+    .askQuestion {
+        &__input {
+            width: 80%;
+            margin: 0 20px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
     }
 }
