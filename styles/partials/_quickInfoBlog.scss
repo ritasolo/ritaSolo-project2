@@ -1,0 +1,57 @@
+.quickInfo {
+    background-color: $yellow;
+    padding: 100px 0;
+    &__ul {
+        display: flex;
+    }
+    &__li {
+        width: 25%;
+        text-align:center;
+    }
+    &__p {
+        margin: 0;
+    }
+    &__h4 {
+        margin: 0;
+    }
+    .fas {
+        font-size: 30px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+        &:hover {
+            color: slategray;
+        }
+    }
+}
+
+.blog {
+    text-align: center;
+    &__h3 {
+        margin: 70px 0;
+    }
+    .blogPosts {
+        margin-bottom: 80px;
+        &__ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__li {
+            width: 31.5%;  
+            text-align: left;
+        }
+        &__a {
+            text-transform: uppercase;
+            color: $red;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: 0.5s;
+            &:hover {
+                color: darkslategray;
+            }
+        }
+        &__chevron {
+            font-size: 2rem;
+            margin: 0 5px;
+        }
+    }
+}

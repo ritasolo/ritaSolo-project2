@@ -1,0 +1,72 @@
+
+h1 {
+    @include primaryFontSize(3rem);
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    @include primaryFontSize(4.3rem);
+    margin: 5px 0;
+}
+
+h3,
+.h3 {
+    @include primaryFontSize(3rem);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    &--grey {
+        color: $lightgrey;
+    }
+    &--white {
+        color: white;
+    }
+}
+
+h4,
+.h4 {
+    @include primaryFontSize(1.7rem);
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    &--black {
+        color: black;
+    }
+}
+
+h5 {
+    @include primaryFontSize(2.4rem);
+}
+
+h6 {
+    @include primaryFontSize(1.5rem)
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+p,
+.p {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    line-height: 25px;
+    &--white {
+        color: white;
+    }
+}
+
+h1,
+h2,
+nav ul li a {
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        color: darkslategray;
+    }
+}

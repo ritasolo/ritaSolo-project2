@@ -1,0 +1,81 @@
+$yellow: #e5bf4b;
+$darkgrey: #2a2a2a;
+$lightgrey: #CBCBCB;
+$red: #da331d;
+
+@mixin primaryFontSize($sizeValue) {
+    font-size: $sizeValue;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    @include primaryFontSize(1.7rem);
+    display: flex;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        color: slategray;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.smallWrapper {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.button {
+    width: 120px;
+    height: 38px;
+    border-radius: 25px;
+    font-size: 2px;
+    color: white;
+    transition: 0.3s;
+    margin: 10px 0;
+    &--red {
+        border: 1px solid $red;
+        background-color: $red;
+    }
+    &--grey {
+        border: 1px solid $darkgrey;
+        background-color: $darkgrey;
+    }
+    &__p {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        margin: 1px 0;
+        letter-spacing: 3.5px;
+        font-size: 1.2rem;
+    }
+    &:hover {
+        width: 130px;
+    }
+}
