@@ -1,16 +1,15 @@
 
-h1 {
+.h1 {
     @include primaryFontSize(3rem);
     font-weight: 600;
     color: white;
 }
 
-h2 {
+.h2 {
     @include primaryFontSize(4.3rem);
     margin: 5px 0;
 }
 
-h3,
 .h3 {
     @include primaryFontSize(3rem);
     text-transform: uppercase;
@@ -24,7 +23,6 @@ h3,
     }
 }
 
-h4,
 .h4 {
     @include primaryFontSize(1.7rem);
     margin: 5px 0;
@@ -36,17 +34,16 @@ h4,
     }
 }
 
-h5 {
+.h5 {
     @include primaryFontSize(2.4rem);
 }
 
-h6 {
+.h6 {
     @include primaryFontSize(1.5rem)
     margin: 10px 0;
     font-weight: 600;
 }
 
-p,
 .p {
     font-family: 'Lora', serif;
     font-size: 1.4rem;
@@ -56,8 +53,8 @@ p,
     }
 }
 
-h1,
-h2,
+.h1,
+.h2,
 nav ul li a {
     font-weight: 600;
     color: white;

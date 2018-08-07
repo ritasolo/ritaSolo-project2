@@ -58,5 +58,31 @@
     }
     &__wrapper {
         margin: 30px 0;
+        padding: 0 50px;
     }
+}
+
+@media (max-width: 900px) {
+    .welcome {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 580px) {
+    
+    .about {
+        &__half {
+            width: 100%;
+            text-align: center;
+            padding: 0 60px;
+        }
+        &__info {
+            flex-direction: column;
+        }
+        &__gallery {
+            &__ul {
+                justify-content: center;
+            }
+        }
+    }    
 }

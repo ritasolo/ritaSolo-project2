@@ -15,20 +15,24 @@
         <!-- NAV SECTION BEGINS -->
         <nav class="headerNav">
             <div class="wrapper headerNav__wrapper">
-                <h1 class="headerNav__h1">Restaurant</h1>
-                <ul class="headerNav__ul">
-                    <li class="headerNavNav__li"><a href="#">Home</a></li>
-                    <li class="headerNav__li"><a href="#">Menu</a></li>
-                    <li class="headerNav__li"><a href="#">Blog</a></li>
-                    <li class="headerNav__li"><a href="#">Contact</a></li>
-                    <li class="headerNav__li"><a href="#">About Us</a></li>
-                </ul>
+                <h1 class="h1 headerNav__h1">Restaurant</h1>
+                <p class="p hamburger"><i class="fas fa-bars"></i></p>
+		        <div class="menu">
+                    <ul class="headerNav__ul">
+                        <li class="exit-responsive"><i class="fas fa-sort-up"></i></li>
+                        <li class="headerNavNav__li"><a href="#home">Home</a></li>
+                        <li class="headerNav__li"><a href="#menu">Menu</a></li>
+                        <li class="headerNav__li"><a href="#blog">Blog</a></li>
+                        <li class="headerNav__li"><a href="#contact">Contact</a></li>
+                        <li class="headerNav__li"><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- NAV SECTION ENDS -->
         <div class="wrapper header__wrapper">
-            <h2 class="header__h2">Welcome</h2>
-            <h4 class="header__h4">To My Restaurant Website</h4>
+            <h2 class="h2 header__h2">Welcome</h2>
+            <h4 class="h4 header__h4">To My Restaurant Website</h4>
             <button class="button button--red">
                 <p class="button__p">Start</p>
             </button>
@@ -38,33 +42,33 @@
     <!-- MAIN SECTION BEGINS -->
     <main>
         <!-- ABOUT SECTION BEGINS -->
-        <section class="about">
+        <section class="about" id="home">
             <div class="wrapper about__wrapper">
-                <h3 class="about__h3">We are...</h3>
+                <h3 class="h3 about__h3">We are...</h3>
                 <div class="about__info">
                     <div class="about__half about__gallery">
                         <ul class="about__gallery__ul">
                             <li class="about__gallery__li">
                                 <img src="images/image-2.jpeg" alt="">
-                                <h4 class="about__h4">Local</h4>
+                                <h4 class="h4 about__h4">Local</h4>
                             </li>
                             <li class="about__gallery__li">
                                 <img src="images/image-3.jpeg" alt="">
-                                <h4 class="about__h4">Modern</h4>
+                                <h4 class="h4 about__h4">Modern</h4>
                             </li>
                             <li class="about__gallery__li">
                                 <img src="images/image-4.jpeg" alt="">
-                                <h4 class="about__h4">Friendly</h4>
+                                <h4 class="h4 about__h4">Friendly</h4>
                             </li>
                             <li class="about__gallery__li">
                                 <img src="images/image-5.jpeg" alt="">
-                                <h4 class="about__h4">Delicious</h4>
+                                <h4 class="h4 about__h4">Delicious</h4>
                             </li>
                         </ul>
                     </div>
-                    <div class="about__half about__content">
-                        <h4 class="about__h4">About Us</h4>
-                        <p class="about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    <div class="about__half about__content" id="about">
+                        <h4 class="h4 about__h4">About Us</h4>
+                        <p class="p about__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                         <button class="button button--red">
                             <p class="button__p">More</p>
                         </button>
@@ -76,8 +80,8 @@
         <!-- WELCOME SECTION BEGINS -->
         <section class="welcome">
             <div class="wrapper welcome__wrapper">
-                <h3 class="welcome__h3">Welcome to Restaurant</h3>
-                <p class="welcome__p">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie
+                <h3 class="h3 welcome__h3">Welcome to Restaurant</h3>
+                <p class="p welcome__p">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie
                     vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla
                     neque eu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
                 <button class="button button--grey">
@@ -89,12 +93,12 @@
         <!-- SERVICES SECTION BEGINS -->
         <section class="services">
             <div class="wrapper services__wrapper">
-                <h3 class="welcome__h3">Services</h3>
+                <h3 class="h3 welcome__h3">Services</h3>
                 <div class="services__gallery">
                     <ul class="services__gallery__ul">
                         <li class="services__gallery__li">
-                            <h4 class="services__gallery__h4">Custom Catering</h4>
-                            <p class="services__gallery__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            <h4 class="h4 services__gallery__h4">Custom Catering</h4>
+                            <p class="p services__gallery__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                         </li>
                         <li class="services__gallery__li">
@@ -104,8 +108,8 @@
                             <img src="images/image-7.jpeg" alt="">
                         </li>
                         <li class="services__gallery__li">
-                            <h4 class="services__gallery__h4">Event Booking</h4>
-                            <p class="services__gallery__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            <h4 class="h4 services__gallery__h4">Event Booking</h4>
+                            <p class="p services__gallery__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                         </li>
                     </ul>
@@ -115,7 +119,7 @@
         <!-- SERVICES SECTION ENDS -->
         <!-- REVIEWS SECTION BEGINS -->
         <section class="reviews">
-            <h3 class="h3--grey">Reviews</h3>
+            <h3 class="h3 h3--grey">Reviews</h3>
             <div class="smallWrapper reviews__smallWrapper">
                 <div class="reviews__smallWrapper__images">
                     <a href="#">
@@ -127,14 +131,14 @@
                     </a>
                 </div>
                
-                <p class="reviews__p reviews__p--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                <p class="reviews__p reviews__p--grey reviews__p--author">~ J. Michels ~</p>
+                <p class="p reviews__p reviews__p--grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <p class="p reviews__p reviews__p--grey reviews__p--author">~ J. Michels ~</p>
             </div>
         </section>
         <!-- REVIEWS SECTION ENDS -->
         <!-- EVENT SECTION BEGINS -->
         <section class="events">
-            <h3 class="events__h3">Events</h3>
+            <h3 class="h3 events__h3">Events</h3>
             <div class="events__sampleEvent"> 
                 <ul class="events__sampleEvent__ul">
                     <li class="events__sampleEvent__li">
@@ -144,9 +148,9 @@
                         <img src="images/image-10.jpeg" alt="">
                         <div class="events__sampleEvent__li__content">
                             <div class="container">
-                                <h3 class="h3--white">Sample Event</h3>
+                                <h3 class="h3 events__h3--white">Sample Event</h3>
                             </div>
-                            <p class="p--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p class="p events__p--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
                         </div>
                     </li>
                     <li class="events__sampleEvent__li">
@@ -158,7 +162,7 @@
         <!-- EVENT SECTION ENDS -->
         <!-- ASK QUESTION SECTION BEGINS -->
         <section class="askQuestion">
-            <h3 class="askQuestion__h3">Ask a Question</h3>
+            <h3 class="h3 askQuestion__h3">Ask a Question</h3>
             <input type="text" placeholder="Your Message" class="askQuestion__input" id="askQuestion" name="askQuestion">
             <button class="button button--red">
                 <p class="button__p">Send</p>
@@ -171,45 +175,45 @@
                 <ul class="quickInfo__ul">
                     <li class="quickInfo__li">
                         <i class="fas fa-check-square"></i>
-                        <h4 class="quickInfo__h4 h4--black">16</h4>
-                        <p class="quickInfo__p">Years Open</p>
+                        <h4 class="h4 quickInfo__h4 h4--black">16</h4>
+                        <p class="p quickInfo__p">Years Open</p>
                     </li>
                     <li class="quickInfo__li">
                         <i class="fas fa-smile"></i>
-                        <h4 class="quickInfo__h4 h4--black">180</h4>
-                        <p class="quickInfo__p">Happy Customers</p>
+                        <h4 class="h4 quickInfo__h4 h4--black">180</h4>
+                        <p class="p quickInfo__p">Happy Customers</p>
                     </li>
                     <li class="quickInfo__li">
                         <i class="fas fa-calendar"></i>
-                        <h4 class="quickInfo__h4 h4--black">12</h4>
-                        <p class="quickInfo__p">World Class Cooks</p>
+                        <h4 class="h4 quickInfo__h4 h4--black">12</h4>
+                        <p class="p quickInfo__p">World Class Cooks</p>
                     </li>
                     <li class="quickInfo__li">
                         <i class="fas fa-trophy"></i>
-                        <h4 class="quickInfo__h4 h4--black">55</h4>
-                        <p class="quickInfo__p">Awards</p>
+                        <h4 class="h4 quickInfo__h4 h4--black">55</h4>
+                        <p class="p quickInfo__p">Awards</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <secion class="blog">
+        <secion class="blog" id="blog">
             <div class="wrapper blog__wrapper">
-                <h3 class="blog__h3 h3--black">Our Blog</h3>
+                <h3 class="h3 blog__h3 h3--black">Our Blog</h3>
                 <div class="blogPosts">
                     <ul class="blogPosts__ul">
                         <li class="blogPosts__li">
                             <img src="images/image-12.jpeg" alt="">
-                            <h6>Popular Steak Cuts</h6>
+                            <h6 class="h6">Popular Steak Cuts</h6>
                             <a class="blogPosts__a" href="#">Read More <span class="blogPosts__chevron">&raquo</span></a>
                         </li>
                         <li class="blogPosts__li">
                             <img src="images/image-13.jpeg" alt="">
-                            <h6>Reservations are Booming!</h6>
+                            <h6 class="h6">Reservations are Booming!</h6>
                             <a class="blogPosts__a" href="#">Read More <span class="blogPosts__chevron">&raquo</span></a>
                         </li>
                         <li class="blogPosts__li">
                             <img src="images/image-14.jpeg" alt="">
-                            <h6>Wine Tasting Events</h6>
+                            <h6 class="h6">Wine Tasting Events</h6>
                             <a class="blogPosts__a" href="#">Read More <span class="blogPosts__chevron">&raquo</span></a>
                         </li>
                     </ul>
@@ -219,33 +223,36 @@
     </main> 
     <!-- MAIN SECTION ENDS -->
     <!-- FOOTER SECTION BEGINS -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="wrapper footer__wrapper">
             <ul class="footerSections">
                 <li class="footerSections__third">
-                    <h4 class="footer__h4">Contact</h4>
+                    <h4 class="h4 footer__h4">Contact</h4>
                     <p class="footer__contact">
                         <i class="far fa-envelope"></i>
                         info@hackeryou.com
                     </p>
-                    <p class="footer__contact">
+                    <p class="p footer__contact">
                         <i class="fas fa-phone"></i>
                         123-456-7890
                     </p>
-                    <p class="footer__contact">
+                    <p class="p footer__contact">
                         <i class="fas fa-map-marker-alt"></i>
                         Toronto, Ontario
                     </p>
-                    <input type="email" class="footerSections__email" id="email" name="email" placeholder="your email">
+                    <form class="footer__form">
+                        <label for="email" class="visuallyhidden">Email Address</label>
+                        <input type="email" class="footerSections__email" id="id" name="email" placeholder="your email">
+                    </form>
                 </li>
                 <li class="footerSections__third">
-                    <h4 class="footer__h4">About Us</h4>
-                    <p class="footer__p">
+                    <h4 class="h4 footer__h4">About Us</h4>
+                    <p class="p footer__p">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </li>
                 <li class="footerSections__third">
-                    <h4 class="footer__h4">Instagram</h4>
+                    <h4 class="h4 footer__h4">Instagram</h4>
                     <ul class="footerSections__gallery">
                         <li class="footerSections__galleryItem">
                             <img src="images/image-15.jpeg" alt="">
@@ -274,26 +281,27 @@
                     </ul>
                 </li>
             </ul>
+            <div class="footerSections__socialMedia">
+                <a class="footerSections__socialMedia__a" href="#">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a class="footerSections__socialMedia__a" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="footerSections__socialMedia__a" href="#">
+                    <i class="fab fa-pinterest-p"></i>      
+                </a>
+            </div>
         </div>
         <nav class="footer__nav">
             <div class="wrapper footer__wrapper">
-                <h1 class="footer__h1">Restaurant</h1>
+                <h1 class="h1 footer__h1">Restaurant</h1>
                 <ul class="footer__ul">
-                    <li class="footer__li">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="footer__li">
-                        <a href="#">Menu</a>
-                    </li>
-                    <li class="footer__li">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="footer__li">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="footer__li">
-                        <a href="#">About Us</a>
-                    </li>
+                    <li class="footer__li"><a href="#home">Home</a></li>
+                    <li class="footer__li"><a href="#menu">Menu</a></li>
+                    <li class="footer__li"><a href="#blog">Blog</a></li>
+                    <li class="footer__li"><a href="#contact">Contact</a></li>
+                    <li class="footer__li"><a href="#about">About Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -304,5 +312,19 @@
         </section>
     </footer>
     <!-- FOOTER SECTION ENDS -->
+    <!-- SCRIPT SECTION BEGINS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+       	$('.hamburger').on('click', function () {
+                $('.menu').addClass('show');
+            });
+
+        $('.exit-responsive').on('click', function () {
+                $('.menu').removeClass('show');
+            });
+    
+    </script>
+    <!-- SCRIPT SECTION ENDS -->
 </body>
 </html>
