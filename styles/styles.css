@@ -596,10 +596,10 @@ a {
       align-items: center;
       background: rgba(42, 42, 42, 0.9); }
     .events__sampleEvent__li img {
-      max-height: 242px; }
+      max-height: 238px; }
     .events__sampleEvent__li__content {
       position: absolute;
-      max-height: 242px;
+      max-height: 240px;
       top: 0;
       left: 0;
       right: 0;
